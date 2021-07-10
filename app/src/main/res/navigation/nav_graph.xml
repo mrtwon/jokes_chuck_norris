@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentJokes">
+
+    <fragment
+        android:id="@+id/fragmentJokes"
+        android:name="com.mrtwon.humorcucknoris.FragmentJokes.FragmentJokes"
+        android:label="FragmentJokes" >
+        <action
+            android:id="@+id/action_fragmentJokes_to_fragmentWebView"
+            app:destination="@id/fragmentWebView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWebView"
+        android:name="com.mrtwon.humorcucknoris.FragmentWebView.FragmentWebView"
+        android:label="FragmentWebView" />
+</navigation>
